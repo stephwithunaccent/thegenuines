@@ -1,5 +1,5 @@
 class Photo < ApplicationRecord
-  belongs_to :user
+  belongs_to :albums
   has_many :photo_tags
   has_many :votes
   has_many :tags, through: :photo_tags

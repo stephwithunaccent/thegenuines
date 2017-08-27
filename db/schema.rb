@@ -15,6 +15,15 @@ ActiveRecord::Schema.define(version: 20170827183543) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "albums", force: :cascade do |t|
+    t.string "name"
+    t.text "context"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_albums_on_user_id"
+  end
+
   create_table "attachinary_files", force: :cascade do |t|
     t.string "attachinariable_type"
     t.bigint "attachinariable_id"
@@ -44,10 +53,10 @@ ActiveRecord::Schema.define(version: 20170827183543) do
     t.string "name"
     t.text "context"
     t.datetime "date"
-    t.bigint "user_id"
+    t.bigint "album_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_photos_on_user_id"
+    t.index ["album_id"], name: "index_photos_on_album_id"
   end
 
   create_table "tags", force: :cascade do |t|
@@ -86,9 +95,10 @@ ActiveRecord::Schema.define(version: 20170827183543) do
     t.index ["user_id"], name: "index_votes_on_user_id"
   end
 
+  add_foreign_key "albums", "users"
   add_foreign_key "photo_tags", "photos"
   add_foreign_key "photo_tags", "tags"
-  add_foreign_key "photos", "users"
+  add_foreign_key "photos", "albums"
   add_foreign_key "votes", "photos"
   add_foreign_key "votes", "users"
 end
