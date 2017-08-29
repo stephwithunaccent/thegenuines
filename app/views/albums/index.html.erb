@@ -1,2 +1,16 @@
-<h1>Albums#index</h1>
-<p>Find me in app/views/albums/index.html.erb</p>
+<div class="container-fluid">
+  <div class="col-xs-3">
+    <div class=title>
+     <h1>jdjdhfjdhf</h1>
+   </div>
+ </div>
+ <div class="col-xs-9">
+  <div class="landing-photo">
+     <%= cl_image_tag("Pappa60-48_ynnopb.jpg", width: 400, height: 550, crop: :fill ) %>
+     </div>
+       <% @albums.each do |album| %>
+     <h1><%= album.name %></h1>
+     <% end %>
+ </div>
+
+</div>
