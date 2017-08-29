@@ -1,5 +1,5 @@
 class AlbumsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:index, :show]
+  skip_before_action :authenticate_user!, only: [:index, :show, :new]
 
   def index
     @albums = Album.all
@@ -40,5 +40,9 @@ class AlbumsController < ApplicationController
   end
 
   private
+
+  def album_params
+  params.require(:album).permit(:name, :context, photos: [])
+  end
 
 end
