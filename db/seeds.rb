@@ -12,16 +12,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-
 puts "Cleaning seed"
 
-PhotoTags.destroy_all
+PhotoTag.destroy_all
 Photo.destroy_all
 Tag.destroy_all
 Album.destroy_all
 User.destroy_all
-
 
 puts "Generating seed"
 
@@ -39,36 +36,36 @@ tag2 = Tag.create(name: "model")
 tag3 = Tag.create(name: "water")
 
 #photo x15 5 par album
-photo1 = Photo.create(name: "Claudia", context: "blabla", date: Date.today, photo_url: "url cloudinary", album: album1.id, photo_tags:   )
-photo1 = Photo.create(name: "Claudia", context: "blabla", date: Date.today, photo_url: "url cloudinary", album: album1.id, photo_tags:   )
-photo1 = Photo.create(name: "Claudia", context: "blabla", date: Date.today, photo_url: "url cloudinary", album: album1.id, photo_tags:   )
-photo1 = Photo.create(name: "Claudia", context: "blabla", date: Date.today, photo_url: "url cloudinary", album: album1.id, photo_tags:   )
-photo1 = Photo.create(name: "Claudia", context: "blabla", date: Date.today, photo_url: "url cloudinary", album: album1.id, photo_tags:   )
-photo1 = Photo.create(name: "Claudia", context: "blabla", date: Date.today, photo_url: "url cloudinary", album: album2.id, photo_tags:   )
-photo1 = Photo.create(name: "Claudia", context: "blabla", date: Date.today, photo_url: "url cloudinary", album: album2.id, photo_tags:   )
-photo1 = Photo.create(name: "Claudia", context: "blabla", date: Date.today, photo_url: "url cloudinary", album: album2.id, photo_tags:   )
-photo1 = Photo.create(name: "Claudia", context: "blabla", date: Date.today, photo_url: "url cloudinary", album: album2.id, photo_tags:   )
-photo1 = Photo.create(name: "Claudia", context: "blabla", date: Date.today, photo_url: "url cloudinary", album: album2.id, photo_tags:   )
-photo1 = Photo.create(name: "Claudia", context: "blabla", date: Date.today, photo_url: "url cloudinary", album: album3.id, photo_tags:   )
-photo1 = Photo.create(name: "Claudia", context: "blabla", date: Date.today, photo_url: "url cloudinary", album: album3.id, photo_tags:   )
-photo1 = Photo.create(name: "Claudia", context: "blabla", date: Date.today, photo_url: "url cloudinary", album: album3.id, photo_tags:   )
-photo1 = Photo.create(name: "Claudia", context: "blabla", date: Date.today, photo_url: "url cloudinary", album: album3.id, photo_tags:   )
-
+photo1 = Photo.create(name: "Claudia", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1503934817/Pappa60-48_ynnopb.jpg", album: album1.id )
+photo2 = Photo.create(name: "Al", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1503934817/Pappa60-48_ynnopb.jpg", album: album1.id )
+photo3 = Photo.create(name: "B", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1503934817/Pappa60-48_ynnopb.jpg", album: album1.id )
+photo4 = Photo.create(name: "Jorge", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1503934817/Pappa60-48_ynnopb.jpg", album: album1.id )
+photo5 = Photo.create(name: "Cane", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1503934817/Pappa60-48_ynnopb.jpg", album: album1.id )
+photo6 = Photo.create(name: "Caksjd", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1503934817/Pappa60-48_ynnopb.jpg", album: album2.id )
+photo7 = Photo.create(name: "Cdfdgf", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1503934817/Pappa60-48_ynnopb.jpg", album: album2.id )
+photo8 = Photo.create(name: "Csdfsdf", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1503934817/Pappa60-48_ynnopb.jpg", album: album2.id )
+photo9 = Photo.create(name: "Clafa", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1503934817/Pappa60-48_ynnopb.jpg", album: album2.id )
+photo10 = Photo.create(name: "Clauddf", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1503934817/Pappa60-48_ynnopb.jpg", album: album2.id )
+photo11 = Photo.create(name: "Clakjia", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1503934817/Pappa60-48_ynnopb.jpg", album: album3.id )
+photo12 = Photo.create(name: "Clafgfia", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1503934817/Pappa60-48_ynnopb.jpg", album: album3.id )
+photo13 = Photo.create(name: "asda", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1503934817/Pappa60-48_ynnopb.jpg", album: album3.id )
+photo14 = Photo.create(name: "Cljgfd", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1503934817/Pappa60-48_ynnopb.jpg", album: album3.id )
+photo15 = Photo.create(name: "Clasdfgfh", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1503934817/Pappa60-48_ynnopb.jpg", album: album3.id )
 #photo_tags x15
-photo_tags1 = PhotoTags.create(photo_id: photo1.id, tag_id: tag1.id )
-photo_tags2 = PhotoTags.create(photo_id: photo2.id, tag_id: tag2.id )
-photo_tags3 = PhotoTags.create(photo_id: photo3.id, tag_id: tag3.id )
-photo_tags4 = PhotoTags.create(photo_id: photo4.id, tag_id: tag1.id )
-photo_tags5 = PhotoTags.create(photo_id: photo5.id, tag_id: tag2.id )
-photo_tags6 = PhotoTags.create(photo_id: photo6.id, tag_id: tag3.id )
-photo_tags7 = PhotoTags.create(photo_id: photo7.id, tag_id: tag1.id )
-photo_tags8 = PhotoTags.create(photo_id: photo8.id, tag_id: tag1.id )
-photo_tags9 = PhotoTags.create(photo_id: photo9.id, tag_id: tag1.id )
-photo_tags10 = PhotoTags.create(photo_id: photo10.id, tag_id: tag1.id )
-photo_tags11 = PhotoTags.create(photo_id: photo11.id, tag_id: tag1.id )
-photo_tags12 = PhotoTags.create(photo_id: photo12.id, tag_id: tag1.id )
-photo_tags13 = PhotoTags.create(photo_id: photo13.id, tag_id: tag1.id )
-photo_tags14 = PhotoTags.create(photo_id: photo14.id, tag_id: tag1.id )
-photo_tags15 = PhotoTags.create(photo_id: photo15.id, tag_id: tag1.id )
+photo_tags1 = PhotoTag.create(photo_id: photo1.id, tag_id: tag1.id )
+photo_tags2 = PhotoTag.create(photo_id: photo2.id, tag_id: tag2.id )
+photo_tags3 = PhotoTag.create(photo_id: photo3.id, tag_id: tag3.id )
+photo_tags4 = PhotoTag.create(photo_id: photo4.id, tag_id: tag1.id )
+photo_tags5 = PhotoTag.create(photo_id: photo5.id, tag_id: tag2.id )
+photo_tags6 = PhotoTag.create(photo_id: photo6.id, tag_id: tag3.id )
+photo_tags7 = PhotoTag.create(photo_id: photo7.id, tag_id: tag1.id )
+photo_tags8 = PhotoTag.create(photo_id: photo8.id, tag_id: tag1.id )
+photo_tags9 = PhotoTag.create(photo_id: photo9.id, tag_id: tag1.id )
+photo_tags10 = PhotoTag.create(photo_id: photo10.id, tag_id: tag1.id )
+photo_tags11 = PhotoTag.create(photo_id: photo11.id, tag_id: tag1.id )
+photo_tags12 = PhotoTag.create(photo_id: photo12.id, tag_id: tag1.id )
+photo_tags13 = PhotoTag.create(photo_id: photo13.id, tag_id: tag1.id )
+photo_tags14 = PhotoTag.create(photo_id: photo14.id, tag_id: tag1.id )
+photo_tags15 = PhotoTag.create(photo_id: photo15.id, tag_id: tag1.id )
 
 puts "Seed complete"
