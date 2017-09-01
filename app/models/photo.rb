@@ -4,6 +4,5 @@ class Photo < ApplicationRecord
   has_many :votes
   has_many :tags, through: :photo_tags
   has_attachment :photo
-  belongs_to :user
   validates :name, :date, presence: true
 end

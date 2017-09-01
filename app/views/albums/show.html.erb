@@ -1,7 +1,6 @@
+<h1><%= @album.name %></h1>
 
 
-<div class="container">
-<% @album.photos.each do |photo| %>
-  <%= cl_image_tag photo.path, width: 300, height: 200, crop: :fill %>
-<% end %>
-</div>
+<%= render "imagecarrousel" %>
+
+

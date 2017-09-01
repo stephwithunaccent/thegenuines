@@ -1,16 +1,21 @@
 <div class="container-fluid">
   <div class="col-xs-3">
     <div class=title>
-     <h1>jdjdhfjdhf</h1>
+     <h4>
+       <% @albums.each do |album| %>
+         <%= link_to album_path(album) do %>
+          <li><%= album.name %></li>
+        <% end %>
+      <% end %>
+     </h4>
    </div>
  </div>
- <div class="col-xs-9">
-  <div class="landing-photo">
-     <%= cl_image_tag("Pappa60-48_ynnopb.jpg", width: 400, height: 550, crop: :fill ) %>
-     </div>
-       <% @albums.each do |album| %>
-     <h1><%= album.name %></h1>
-     <% end %>
- </div>
 
+ <div class="col-xs-9">
+   <div class="landing-photo">
+     <%= cl_image_tag("tumblr_oiej5qM7VK1tiqg8co1_1280_hjeth8.png", width: 350, height: 490, crop: :fill ) %>
+    </div>
+ </div>
 </div>
+
+
