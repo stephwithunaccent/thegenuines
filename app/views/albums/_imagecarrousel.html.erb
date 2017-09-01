@@ -1,0 +1,44 @@
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-lg-12">
+      <div id="carousel-custom" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <% @album.photos.each do |photo| %>
+   <!---           <div class="item active"> -->
+                <div class="item">
+                  <%= cl_image_tag photo.photo.path, class: "img-responsive" %>
+                </div>
+              <% end %>
+          <!---  </div> -->
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-custom" role="button" data-slide="prev">
+          <i class="fa fa-chevron-left"></i>
+          <span class="sr-only">Left</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-custom" role="button" data-slide="next">
+          <i class="fa fa-chevron-right"></i>
+          <span class="sr-only">Right</span>
+        </a>
+
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators visible-sm-block hidden-xs-block visible-md-block visible-lg-block">
+        <% @album.photos.each do |photo| %>
+            <li data-target="#carousel-custom" data-slide-to="0" class="active">
+                <%= cl_image_tag photo.photo.path, class: "img-responsive" %>
+            </li>
+          <% end %>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$('.carousel-inner')</script>

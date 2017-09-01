@@ -1,5 +1,5 @@
 class AlbumsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:index, :show]
+  skip_before_action :authenticate_user!, only: [:index, :show ]
 
   def index
     @albums = Album.all
@@ -14,8 +14,9 @@ class AlbumsController < ApplicationController
   end
 
   def create
+    @album = Album.new(album_params)
     if @album.save!
-      redirect to @album
+      redirect_to @album
     else
       render :new
     end
@@ -40,5 +41,9 @@ class AlbumsController < ApplicationController
   end
 
   private
+
+  def album_params
+  params.require(:album).permit(:name, :context, photos: [])
+  end
 
 end

@@ -1,6 +1,8 @@
 class PhotosController < ApplicationController
-
+  skip_before_action :authenticate_user!, only: [:index, :show ]
   before_action :set_photo, only: [ :show, :edit, :update, :destroy]
+  before_action :set_album, only: [ :new, :create ]
+
   def index
     if params[:tag].present?
       @tag = params[:tag]
@@ -14,12 +16,14 @@ class PhotosController < ApplicationController
   end
 
   def new
-    @photo = Photo.new()
+    @photo = Photo.new
+    @albums = Album.all
   end
 
   def create
+    @photo = Photo.new(photo_params)
     if @photo.save!
-      redirect_to @photo
+      redirect_to album_path
     else
       render :new
     end
@@ -43,11 +47,15 @@ class PhotosController < ApplicationController
 
   private
 
+  def set_album
+    @album = Album.find(params[:album_id])
+  end
+
   def set_photo
     @photo = Photo.find(params[:id])
   end
 
   def photo_params
-    params.require(:photo).permit(:name, :date, :context, :album_id, photo_url:)
+    params.require(:photo).permit(:name, :date, :context, :album_id )
   end
 end
