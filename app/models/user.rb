@@ -6,5 +6,6 @@ class User < ApplicationRecord
 
   has_many :photos
   has_many :votes
+  has_many :albums
   # validates :first_name, :last_name, presence: true
 end

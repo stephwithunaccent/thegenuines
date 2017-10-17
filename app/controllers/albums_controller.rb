@@ -3,6 +3,7 @@ class AlbumsController < ApplicationController
 
   def index
     @albums = Album.all
+    @album = Album.find_by(name: "Femmes de Gueule")
   end
 
   def show
@@ -15,6 +16,7 @@ class AlbumsController < ApplicationController
 
   def create
     @album = Album.new(album_params)
+    @album.user = current_user
     if @album.save!
       redirect_to @album
     else
