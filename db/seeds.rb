@@ -40,9 +40,9 @@ tag3 = Tag.create(name: "water")
 
 photo1 = Photo.create(name: "Claudia", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1504259412/tumblr_oiej5qM7VK1tiqg8co1_1280_hjeth8.png", album: album1 )
 photo2 = Photo.create(name: "Chane", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508094231/smoothieshack/smaller.jpg", album: album2 )
-photo3 = Photo.create(name: "B", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508087896/smoothieshack/chanal5.jpg", album: album2 )
-photo4 = Photo.create(name: "Jorge", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508094262/smoothieshack/smaller-3.jpg", album: album2 )
-photo5 = Photo.create(name: "Cane", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508094335/smoothieshack/smaller-6.jpg", album: album2 )
+photo3 = Photo.create(name: "Chane Husselman", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508087896/smoothieshack/chanal5.jpg", album: album2 )
+photo4 = Photo.create(name: "Chanel Husselman1", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508094262/smoothieshack/smaller-3.jpg", album: album2 )
+photo5 = Photo.create(name: "Chanel Husselman2", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508094335/smoothieshack/smaller-6.jpg", album: album2 )
 photo6 = Photo.create(name: "Caksjd", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508139273/smoothieshack/Cloudinary-51.jpg", album: album3 )
 photo7 = Photo.create(name: "Cdfdgf", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508139202/smoothieshack/Cloudinary-53.jpg", album: album3 )
 photo8 = Photo.create(name: "Csdfsdf", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508139365/smoothieshack/Cloudinary-71.jpg", album: album3 )
@@ -58,6 +58,9 @@ photo17 = Photo.create(name: "Simihaze", context: "LV SS18", date: Date.today, p
 photo18 = Photo.create(name: "Claudia 1", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508233512/smoothieshack/Claudiaoct.jpg", album: album1 )
 photo19 = Photo.create(name: "Claudia 2", context: "PFW SS18", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508233507/smoothieshack/claudiaoctt.jpg", album: album1 )
 photo20 = Photo.create(name: "Simihaze", context: "LV SS18", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508139153/smoothieshack/Cloudinary-55.jpg", album: album4 )
+photo21 = Photo.create(name: "CH", context: "New York City SS18", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508094230/smoothieshack/smaller-5.jpg", album: album2 )
+
+
 #photo_tags x15
 photo_tags1 = PhotoTag.create(photo_id: photo1.id, tag_id: tag1.id )
 photo_tags2 = PhotoTag.create(photo_id: photo2.id, tag_id: tag2.id )
