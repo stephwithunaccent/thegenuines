@@ -29,6 +29,7 @@ stephanie = User.create(email: "stephaniec.s@hotmail.com", password: "coucou", f
 album1 = Album.create(name: "Femmes de Gueule", context: "blablabalblabla", user: User.first)
 album2 = Album.create(name: "Smoothieshack", context: "blablabalblabla", user: User.first)
 album3 = Album.create(name: "Streetstyle", context: "blablabalblabla", user: User.first)
+album4 = Album.create(name: "Portraits", context: "blablabalblabla", user: User.first)
 
 #tags x3
 tag1 = Tag.create(name: "soleil")
@@ -52,6 +53,11 @@ photo12 = Photo.create(name: "Clafgfia", context: "blabla", date: Date.today, ph
 photo13 = Photo.create(name: "asda", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508139476/smoothieshack/Cloudinary-43.jpg", album: album3 )
 photo14 = Photo.create(name: "Cljgfd", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508139496/smoothieshack/Cloudinary-67.jpg", album: album3 )
 photo15 = Photo.create(name: "Clasdfgfh", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508139252/smoothieshack/Cloudinary-79.jpg", album: album3 )
+photo16 = Photo.create(name: "Shiny", context: "PFW SS18", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508139673/smoothieshack/Cloudinary-31.jpg", album: album4 )
+photo17 = Photo.create(name: "Simihaze", context: "LV SS18", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508139055/smoothieshack/Cloudinary-87.jpg", album: album4 )
+photo18 = Photo.create(name: "Claudia 1", context: "blabla", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508233512/smoothieshack/Claudiaoct.jpg", album: album1 )
+photo19 = Photo.create(name: "Claudia 2", context: "PFW SS18", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508233507/smoothieshack/claudiaoctt.jpg", album: album1 )
+photo20 = Photo.create(name: "Simihaze", context: "LV SS18", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508139153/smoothieshack/Cloudinary-55.jpg", album: album4 )
 #photo_tags x15
 photo_tags1 = PhotoTag.create(photo_id: photo1.id, tag_id: tag1.id )
 photo_tags2 = PhotoTag.create(photo_id: photo2.id, tag_id: tag2.id )
