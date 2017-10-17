@@ -16,6 +16,8 @@ gem 'jquery-rails'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
+gem 'mail_form'
+
 
 gem 'cloudinary'
 gem 'attachinary', github: 'assembler/attachinary'

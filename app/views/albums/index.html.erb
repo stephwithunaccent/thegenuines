@@ -5,15 +5,17 @@
        <% @albums.each do |album| %>
          <%= link_to album_path(album) do %>
           <li><%= album.name %></li>
-        <% end %>
-      <% end %>
+         <% end %>
+       <% end %>
      </h4>
    </div>
  </div>
 
  <div class="col-xs-9">
    <div class="landing-photo">
-     <%= cl_image_tag("tumblr_oiej5qM7VK1tiqg8co1_1280_hjeth8.png", width: 350, height: 490, crop: :fill ) %>
+      <%= link_to album_path(@album) do %>
+       <%= cl_image_tag Photo.first.photo.path, width: 480, height: 690, crop: :fill %>
+      <% end %>
     </div>
  </div>
 </div>

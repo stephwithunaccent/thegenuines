@@ -12,6 +12,10 @@ class PhotosController < ApplicationController
     end
   end
 
+  def index
+
+  end
+
   def show
   end
 
@@ -22,8 +26,9 @@ class PhotosController < ApplicationController
 
   def create
     @photo = Photo.new(photo_params)
-    if @photo.save!
-      redirect_to album_path
+    @photo.save
+    if @photo.save
+      redirect_to album_path(@album.id)
     else
       render :new
     end
@@ -56,6 +61,6 @@ class PhotosController < ApplicationController
   end
 
   def photo_params
-    params.require(:photo).permit(:name, :date, :context, :album_id )
+    params.require(:photo).permit(:name, :date, :context, :album_id, :photo )
   end
 end

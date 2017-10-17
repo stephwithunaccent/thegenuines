@@ -9,4 +9,12 @@ Rails.application.routes.draw do
       resources :votes, only: [:create]
     end
   end
+
+  get 'art', to: 'pages#art'
+  get 'photography', to: 'pages#photography'
+  get 'web', to: 'pages#web'
+  get 'contact', to: 'pages#contact'
+
 end
+
+

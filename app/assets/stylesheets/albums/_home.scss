@@ -1,8 +1,27 @@
-li {
+h4 li {
   list-style: none;
+  color: black;
+  margin:0 0 8px 0;
+  font-family: "Quattrocento Sans Regular light", "Helvetica", "sans-serif";
+  font-weight: lighter;
+  font-size: 20px;
+
 }
 
-h4 li {
+h4 {
+  padding-top: 20px;
+}
+
+
+a:link {
   text-decoration: none;
-  color: black;
+}
+
+.site-content {
+ background-color: white;
+}
+
+
+.landing-photo {
+  padding: 30px;
 }
