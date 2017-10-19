@@ -12,11 +12,14 @@
  </div>
 
  <div class="col-xs-9">
-   <div class="landing-photo">
-      <%= link_to album_path(@album) do %>
-       <%= cl_image_tag Photo.first.photo.path, width: 480, height: 690, crop: :fill %>
-      <% end %>
+  <div class="gallery">
+    <div class="gallery-img">
+      <%= image_tag "Claudiaoct.jpg"  %>
     </div>
+    <div class="gallery-img">
+      <%= cl_image_tag("TheGenuines/Sittinreminiscin_reduced-2.jpg")  %>
+    </div>
+  </div>
  </div>
 </div>
 

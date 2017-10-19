@@ -4,6 +4,9 @@
   <%= link_to "Add a photo", new_album_photo_path(@album.id) %>
 <% end %>
 
-<%= render "imagecarrousel" %>
+<div class=image-container>
+  <%= render "imagecarrousel" %>
+</div>
+
 
 
