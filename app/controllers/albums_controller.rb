@@ -8,6 +8,7 @@ class AlbumsController < ApplicationController
 
   def show
     @album = Album.find(params[:id])
+    @albums = Album.find_by(name: "Mr/Mrs Genuine of the Month")
   end
 
   def new

@@ -1,12 +1,32 @@
 <!-- <h1><%= @album.name %></h1> -->
+<div class="container-fluid">
+  <% if user_signed_in? %>
+    <%= link_to "Add a photo", new_album_photo_path(@album.id) %>
+  <% end %>
 
-<% if user_signed_in? %>
-  <%= link_to "Add a photo", new_album_photo_path(@album.id) %>
-<% end %>
 
-<div class=image-container>
-  <%= render "imagecarrousel" %>
+
+<div class="container">
+  <% if @albums %>
+  <div class="row">
+    <div class="col-md-6">
+        <%= image_tag "Kasmin.jpg"  %>
+    </div>
+    <div class="col-md-6">
+      <%= image_tag "Kasmin2.jpg"  %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="container">
+      <p>blablabla</p>
+    </div>
+  </div>
+  <% end %>
 </div>
 
 
+  <div class="image-container">
+    <%= render "imagecarrousel" %>
+  </div>
+</div>
 

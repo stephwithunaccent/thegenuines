@@ -14,10 +14,9 @@
  <div class="col-xs-9">
   <div class="gallery">
     <div class="gallery-img">
-      <%= image_tag "Claudiaoct.jpg"  %>
-    </div>
-    <div class="gallery-img">
-      <%= cl_image_tag("TheGenuines/Sittinreminiscin_reduced-2.jpg")  %>
+      <%= link_to album_path(@album) do %>
+        <%= image_tag "Claudiaoct.jpg"  %>
+      <% end %>
     </div>
   </div>
  </div>
