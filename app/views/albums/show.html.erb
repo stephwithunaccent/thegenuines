@@ -4,14 +4,22 @@
     <%= link_to "Add a photo", new_album_photo_path(@album.id) %>
   <% end %>
 
+  <% if @albums == @album %>
+    <h1> J.KASMIN </h1>
+    <div class="grid" >
+      <%= image_tag "Kasmin.jpg", class: 'month' %>
+    </div>
+    <% else %>
+      <%= render "imagecarrousel" %>
+  <% end %>
 
 
 
 
-  <div class="image-container">
-    <%= render "imagecarrousel" %>
-  </div>
 
 
 
-</div>
+
+
+
+

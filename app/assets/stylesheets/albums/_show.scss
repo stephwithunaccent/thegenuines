@@ -4,6 +4,14 @@ h1 {
   text-align: center;
 }
 
+.month {
+  max-height: 50%;
+  max-width: 50%;
+  object-fit: cover;
+  margin-left: 313px;
+}
+
+
 
 .gallery {
     -webkit-column-count: 3;
