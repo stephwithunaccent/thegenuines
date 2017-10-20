@@ -67,7 +67,6 @@ photo25 = Photo.create(name: "ColourPrincess", context: "Paris Fashion Week SS18
 photo26 = Photo.create(name: "ChanelPVC", context: "New York City SS18", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508402762/cloudinary/putdemheels.jpg", album: album3 )
 photo27 = Photo.create(name: "Courtney", context: "Smoothieshack", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508421538/TheGenuines/Sittinreminiscin_reduced-14.jpg", album: album5 )
 photo28 = Photo.create(name: "Courtney2", context: "Smoothieshack", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508421534/TheGenuines/Sittinreminiscin_reduced-15.jpg", album: album5 )
-photo29 = Photo.create(name: "John Kasmin", context: "Smoothieshack", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508414800/TheGenuines/Sittinreminiscin_reduced-3.jpg", album: album6 )
 #photo_tags x15
 photo_tags1 = PhotoTag.create(photo_id: photo1.id, tag_id: tag1.id )
 photo_tags2 = PhotoTag.create(photo_id: photo2.id, tag_id: tag2.id )
