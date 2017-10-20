@@ -5,16 +5,39 @@
   <% end %>
 
   <% if @albums == @album %>
-    <h1> J.KASMIN </h1>
-    <div class="grid" >
+    <h1> JOHN KASMIN, New York, Sept.13th 2017 </h1>
+   <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
       <%= image_tag "Kasmin.jpg", class: 'month' %>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="quote">
+        <blockquote>“I’m in NYC for my book signing” he said with his welcoming and genuine British accent. He handed me his business card - “It would be lovely to see you there.”J.Kasmin, I read. “What does the J. stand for?”, I asked him.“Call me Kas, everyone calls me Kas or Kasmin”. Kas it is. </br>
+      <br>
+      Kas found himself lost in the fashion circus outside of the Marc Jacobs fashion show when I bumped into him. He was perfect to me standing there hands folded on his back, his eyes wandering curiously around. I could just picture all the thoughts going through his mind witnessing the bonkers crowds outside of Park Avenue Armory like it was the Carnival of Rio de Janeiro. A woman walking back and forth over the sidewalk, like there was no exit on either side. Another woman with yellow hair speaking to her phone on and off, while you could ask yourself if there really was someone on the other line. </br>
+      <br>
+      We spoke for a little while about Norway and categorically its sumptuous fjords, then the fashion industry as he happened to be related to a top model known for her androgynity and innocent blue eyed look. Victim of the fashion circus myself, it took me a few hours to calm down and connect the dots to the Paul Kasmin gallery, which was confirmed by his follow-up email for his book signing. A gallery I have admired from the other side of the pond representing artists and photographers whose ways and style I would identify myself with, and certainly admire.</br>
+      <br>
+      Fast forward, Paris, ten days later. I had finally made it to the David Hockney exhibit at Pompidou - an artist I simply love to bits. I cherish colours, the triggering of subtle emotions, and pieces that doesn’t push the eye and mind of the beholder to over-intellectualise the piece in front of him/her. Being a vivid follower of the portfolio-career movement, Hockney is to me a prescriptor of this in the artistic world, working across styles, genres and techniques. He always experimented, and famously excelled. I arrive to his polaroid collage-period, which I was unfamiliar too. It’s 22.06, I am almost alone at the Pompidou, and I stop in front of the look of Hockney’s subject. I know this man. It’s Kas. Kasmin, Los Angeles, 12th March 1982, it states. Little did I know when I met Kas on the streets of NYC that he was close to Hockney, and helped him kickstart his career.
+      </br>
+      </blockquote>
+        <img src="http://designabile.com/codepen/pen-quote/icon-quote.png" />
+      </div>
+      </div>
+        </div>
+        <% else %>
+          <%= render "imagecarrousel" %>
     </div>
-    <% else %>
-      <%= render "imagecarrousel" %>
   <% end %>
 
 
 
+
+
+
+    <div class="col-xs-6 col-sm-3"></div>
+    <div class="col-xs-6 col-sm-3"></div>
 
 
 
