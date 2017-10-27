@@ -17,7 +17,7 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'mail_form'
-
+gem 'lightbox2-rails'
 
 gem 'cloudinary'
 gem 'attachinary', github: 'assembler/attachinary'
