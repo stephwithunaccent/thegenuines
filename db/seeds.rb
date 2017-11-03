@@ -67,7 +67,6 @@ photo28 = Photo.create(name: "Courtney2", context: "Smoothieshack", date: Date.t
 photo32 = Photo.create(name: "Leo", context: "Portraits", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1509702978/Portaits/leob_w-4.jpg", album: album4 )
 photo33 = Photo.create(name: "Leo yeux fermés", context: "Portraits", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1509700206/Portaits/Leo-3.jpg", album: album4 )
 photo34 = Photo.create(name: "Leo orange", context: "Portraits", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1509702902/Portaits/leoregard.jpg", album: album4 )
-photo35 = Photo.create(name: "Truls Royk", context: "Portraits", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1509705256/Portaits/Trulsorange-4.jpg", album: album4 )
 photo36 = Photo.create(name: "Truls", context: "Portraits", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1509705253/Portaits/Cams.jpg", album: album4 )
 photo37 = Photo.create(name: "Truls", context: "Portraits", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1509705290/Portaits/Trulsprofil.jpg", album: album4 )
 photo38 = Photo.create(name: "Maria Celine", context: "Paris Fashion Week SS18", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1509706091/streetstyle/mariadelorden.jpg", album: album3 )
