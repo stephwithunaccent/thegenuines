@@ -64,9 +64,6 @@ photo24 = Photo.create(name: "ChanelPVC", context: "New York City SS18", date: D
 photo25 = Photo.create(name: "ColourPrincess", context: "Paris Fashion Week SS18", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508401148/WebDesign/Everyday.jpg", album: album3 )
 photo27 = Photo.create(name: "Courtney", context: "Smoothieshack", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508421538/TheGenuines/Sittinreminiscin_reduced-14.jpg", album: album2 )
 photo28 = Photo.create(name: "Courtney2", context: "Smoothieshack", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508421534/TheGenuines/Sittinreminiscin_reduced-15.jpg", album: album2 )
-photo29 = Photo.create(name: "Ludmila between bars", context: "Femmes de Gueule", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1509709519/Femmes%20de%20Gueule/Ludmila2.jpg", album: album1)
-photo30 = Photo.create(name: "Ludmila orange", context: "Femmes de Gueule", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1509709520/Femmes%20de%20Gueule/LudmilaNatural.jpg", album: album1 )
-photo31 = Photo.create(name: "Ludmila close-up", context: "Femmes de Gueule", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1509709519/Femmes%20de%20Gueule/Ludmila.jpg", album: album1 )
 photo32 = Photo.create(name: "Leo", context: "Portraits", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1509702978/Portaits/leob_w-4.jpg", album: album4 )
 photo33 = Photo.create(name: "Leo yeux fermés", context: "Portraits", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1509700206/Portaits/Leo-3.jpg", album: album4 )
 photo34 = Photo.create(name: "Leo orange", context: "Portraits", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1509702902/Portaits/leoregard.jpg", album: album4 )
@@ -78,7 +75,9 @@ photo39 = Photo.create(name: "Hilde", context: "Paris Fashion Week SS18", date: 
 photo40 = Photo.create(name: "Chanel Ladies", context: "Chanel", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508154439/Chanelladies.jpg", album: album3 )
 photo41 = Photo.create(name: "Nyc simihaze", context: "Elie Saab", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508140032/NYCSimihaze.jpg", album: album3 )
 photo42 = Photo.create(name: "Chloé Men", context: "Elie Saab", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1508139898/Chloemen.jpg", album: album3 )
-
+photo29 = Photo.create(name: "Ludmila between bars", context: "Femmes de Gueule", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1509711211/L_krnwr1.jpg", album: album1)
+photo30 = Photo.create(name: "Ludmila orange", context: "Femmes de Gueule", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1509709520/Femmes%20de%20Gueule/LudmilaNatural.jpg", album: album1 )
+photo31 = Photo.create(name: "Ludmila close-up", context: "Femmes de Gueule", date: Date.today, photo_url: "http://res.cloudinary.com/stephwithunaccentaigu/image/upload/v1509709519/Femmes%20de%20Gueule/Ludmila.jpg", album: album1 )
 
 
 #photo_tags x15
