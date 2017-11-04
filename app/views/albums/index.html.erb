@@ -1,14 +1,16 @@
 <div class="container-fluid">
   <div class="col-xs-3">
-    <div class=title>
-     <h4>
-       <% @albums.each do |album| %>
-         <%= link_to album_path(album) do %>
-          <li><%= album.name %></li>
+    <div class="navbar-wagon-right hidden-xs hidden-sm">
+      <div class=title>
+       <h4>
+         <% @albums.each do |album| %>
+           <%= link_to album_path(album) do %>
+            <li><%= album.name %></li>
+           <% end %>
          <% end %>
-       <% end %>
-     </h4>
-   </div>
+       </h4>
+     </div>
+    </div>
  </div>
 
  <div class="col-xs-9">
@@ -24,5 +26,3 @@
   </div>
  </div>
 </div>
-
-

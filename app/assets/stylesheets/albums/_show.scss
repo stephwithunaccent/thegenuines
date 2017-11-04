@@ -49,6 +49,13 @@ h1 {
     break-inside: avoid; /* For standard browsers like IE. :-) */
 }
 
+@media screen and (max-width: 767px) {
+.gallery.landing {
+    -webkit-column-count: 1 !important;
+    column-count: 1 !important;
+}
+}
+
 .gallery img:hover {
     opacity: 1;
 }
