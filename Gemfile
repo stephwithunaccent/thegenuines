@@ -24,6 +24,7 @@ gem 'attachinary', github: 'assembler/attachinary'
 gem 'jquery-fileupload-rails'
 gem 'coffee-rails'
 gem 'pdf-reader'
+gem 'friendly_id'
 
 
 group :development, :test do

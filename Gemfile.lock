@@ -86,6 +86,8 @@ GEM
       thor (~> 0.14)
     font-awesome-sass (4.7.0)
       sass (>= 3.2)
+    friendly_id (5.2.3)
+      activerecord (>= 4.0.0)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     hashery (2.1.2)
@@ -244,6 +246,7 @@ DEPENDENCIES
   devise
   figaro
   font-awesome-sass
+  friendly_id
   jbuilder (~> 2.0)
   jquery-fileupload-rails
   jquery-rails
