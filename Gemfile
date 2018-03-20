@@ -20,6 +20,7 @@ gem 'mail_form'
 gem 'lightbox2-rails'
 gem 'swipebox'
 
+
 gem 'cloudinary'
 gem 'attachinary', github: 'assembler/attachinary'
 gem 'jquery-fileupload-rails'

@@ -39,6 +39,29 @@
 
 </div>
 </div>
+
+<% elsif @virtue == @album %>
+<h1> NORWEGIAN WOODS </h1>
+<h1>Featuring<br><a style='color:black; text-decoration:none', href="https://www.bytimo.no/" >By Timo</a></br></h1>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <%= cl_image_tag("Scandinavian Fashion.png", :width=>2244, :crop=>"scale", :class=>"month") %>
+      <%= cl_image_tag("Hannah Hansen.jpg", :width=>2244, :crop=>"scale", :class=>"month") %>
+      <%= cl_image_tag("Elisabeth Stray Pedersen.jpg", :width=>2244, :crop=>"scale", :class=>"month") %>
+      <%= cl_image_tag("Annie Berner.jpg", :width=>2244, :crop=>"scale", :class=>"month") %>
+      <%= cl_image_tag("Scandinavian Fashion ByTimo.jpg", :width=>2244, :crop=>"scale", :class=>"month") %>
+
+
+
+    </div>
+
+
+  </div>
+</div>
+
 <% else %>
 <%= render "imagecarrousel" %>
 </div>

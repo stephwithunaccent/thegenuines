@@ -11,7 +11,8 @@ class AlbumsController < ApplicationController
   def show
     @albums = Album.all
     @album = Album.find(params[:id])
-    @kas = Album.find_by(name: "Mr/Mrs Genuine of the Month")
+    @kas = Album.find_by(name: "Mr.Mrs Genuine")
+    @virtue = Album.find_by(name: "The New ScandiCool")
   end
 
   def new
